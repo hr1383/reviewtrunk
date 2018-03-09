@@ -6,7 +6,7 @@ class CreateSites < ActiveRecord::Migration[5.0]
       t.string :sites
       t.string :plan
       t.timestamps
-      add_reference :users, :user_id, index: true, foreign_key: true
+      # add_reference :users, :user_id, index: true, foreign_key: true
     end
   end
 end
