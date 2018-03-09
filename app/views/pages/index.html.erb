@@ -1,0 +1,72 @@
+<% if user_signed_in? %>
+	<h2>Welcome to Review Trunk</h2>
+	<%= form_for(@site, html: {class: 'form-horizontal'}) do |f| %>	
+	  <div class="field form-group">
+	    <%= f.label :business, class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :business, class: 'form-control' %>
+	    </div>
+	  </div>
+	  <div class="field form-group">
+	    <%= f.label :address, class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_area :address, class: 'form-control' %>
+	    </div>
+	  </div>
+	   <div class="field form-group">
+	    <%= f.label :business_url, 'Offical Website', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :business_url, class: 'form-control' %>
+	    </div>
+	  </div>
+	  <div class="field form-group">
+	    <%= f.label :widget1, 'Widget', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.collection_select :widget1, Provider.all, :id, :name %>
+	    </div>
+	  </div>
+	  <div class="field form-group">
+	    <%= f.label :url1, 'Url', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :url1, class: 'form-control' %>
+	    </div>
+	  </div>
+	   <div class="field form-group">
+	    <%= f.label :widget2, 'Widget', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">	    
+	      <%= f.collection_select :widget2, Provider.all, :id, :name %>
+	    </div>
+	  </div>
+	  <div class="field form-group">
+	    <%= f.label :url2, 'Url', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :url2, class: 'form-control' %>
+	    </div>
+	  </div>
+	   <div class="field form-group">
+	    <%= f.label :widget3, 'Widget', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.collection_select :widget2, Provider.all, :id, :name %>
+	    </div>
+	  </div>
+	  <div class="field form-group">
+	    <%= f.label :url3, 'Url', class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :url3, class: 'form-control' %>
+	    </div>
+	  </div>
+	   <div class="field form-group">
+	    <%= f.label :ratings, class: 'col-sm-2 control-label' %>
+	    <div class="col-sm-3">
+	      <%= f.text_field :ratings, class: 'form-control' %>
+	    </div>
+	  </div>
+	  <div class="actions form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <%= f.submit "Save" %>
+	    </div>
+	  </div>
+	<% end %>
+<% else %>
+	<h2> Click on the link to login</h2>	
+<% end %>
