@@ -6,9 +6,10 @@ Rails.application.routes.draw do
 root to: 'pages#index'
 
 resources :sites
-get '/pages/pay', :to=>'pages#pay'
+# get '/pages/pay', :to=>'pages#pay'
 
-get '/payment', :to=>'pages#payment'
-get '/thanks', :to=>'pages#thanks'
+# get '/payment', :to=>'pages#payment'
+# get '/thanks', :to=>'pages#thanks'
 post '/sites/pay', :to=>'sites#pay'
+post 'pages/signup', :to=>'pages#signup'
 end

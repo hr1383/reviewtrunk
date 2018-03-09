@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-before_action :authenticate_user!
+before_action :authenticate_user!, :except => [:signup]
 
 def index	
 	if current_user == nil
@@ -9,14 +9,13 @@ def index
 		@site = Site.new if @site == nil
 	end
 end
-	
-def pay	
+
+def signup
+	Signup.create(signup_params).save
+	render :json => {"success": true}
 end
 
-def payment
-end
-
-def thanks
-
+def signup_params
+	params.require(:signup).permit(:name, :email, :url)
 end
 end
