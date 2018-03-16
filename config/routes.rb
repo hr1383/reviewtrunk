@@ -17,6 +17,6 @@ post 'pages/signup', :to=>'pages#signup'
 
 resources :pages , only: [:index]
 
-get 'dthanks', :to=>'welcomes#demo_thanks'
+get 'demo_thanks', :to=>'welcomes#demo_thanks'
 resources :welcomes, only: [:index]
 end
