@@ -5117,6 +5117,8 @@ input:focus {
   color: #fff;
   font-weight: 400;
   padding-top: 30px;
+  width: 60%;
+  margin: 0 auto;
 }
 .thank_img {
   padding-top: 30px;
