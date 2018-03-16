@@ -10,11 +10,12 @@ def configure_permitted_parameters
   devise_parameter_sanitizer.permit(:account_update, keys: [:name])
 end
 
-# def after_sign_in_path_for(resource)
-#   if resource.class == AdminUser
-#     admin_root_path 
-#   elsif resource.class == User
-#     dashboard_index_path 
-#   end
-# end
+def after_sign_in_path_for(resource)
+  # if resource.class == AdminUser
+  #   admin_root_path
+  # els
+  if resource.class == User
+    pages_path
+  end
+end
 end

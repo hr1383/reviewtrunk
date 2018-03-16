@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
 	<h2>Welcome to Review Trunk</h2>
-	<%= form_for(@site, html: {class: 'form-horizontal'}) do |f| %>	
+	<%= form_for(@site, html: {class: 'form-horizontal site_form'}) do |f| %>	
 	  <div class="field form-group">
 	    <%= f.label :business, class: 'col-sm-2 control-label' %>
 	    <div class="col-sm-3">
