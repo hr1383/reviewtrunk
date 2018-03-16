@@ -13,5 +13,9 @@ class WelcomesController < ApplicationController
 	def thanks
 
 	end
+	
+	def policy
+
+	end
 
 end

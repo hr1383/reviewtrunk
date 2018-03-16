@@ -5135,7 +5135,7 @@ input:focus {
   padding-top: 30px;
   font-weight: bold;
 }
-.privacy_text {
+.privacy_text_wrapper {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   line-height: 1.875em;
@@ -5143,6 +5143,10 @@ input:focus {
   font-weight: normal;
   padding-top: 30px;
   padding-bottom: 20px;
+}
+.privacy_text_area{
+        width: 90%;
+        margin: 0 auto;
 }
 #exampleFormControlTextarea1 {
   box-shadow: 1px 2px 8px 2px #888888!important;
