@@ -20,4 +20,5 @@ resources :pages , only: [:index]
 get 'demo_thanks', :to=>'welcomes#demo_thanks'
 get 'policy', :to=>'welcomes#policy'
 resources :welcomes, only: [:index]
+
 end
