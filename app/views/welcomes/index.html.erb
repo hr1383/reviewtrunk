@@ -1,64 +1,30 @@
 
-	<nav class=" navbar navbar-default ">
-		  <div class="container">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <!-- <a class="navbar-brand" href="#index.html"><img src="img/logo-inverse.png" class="logo-img img-responsive"></a> -->
-		        <a class="navbar-brand" href="index.html">
-			        <span class="logo-default">
-                        <%=image_tag("logo-default.png") %>
-			        </span>
-			        <span class="logo-inverse">
-                        <%=image_tag("logo-inverse.png") %>
-			        </span>
-     			 </a>
-		    </div>
+<%=render template: 'layouts/header'%>
+<section class="u-py-100 u-h-90vh u-flex-center" style="background:url(assets/bg-25.jpg) no-repeat; background-size:cover; background-position: top center;">
+  <div class="container">
+     
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		   
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#whatis">What is ReviewTrunk</a></li>
-		        <li><a href="#howitWorks">How it Works</a></li>
-		        <li><a href="#demo">Free Demo</a></li>
-		        <li><a href="#pricing">Pricing</a></li>
-		         <li><a href="#about">About us</a></li>
-		          <li><a href="#contact">Contact Us</a></li>
-		       </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-		<section class="u-py-100 u-h-90vh u-flex-center" style="background:url(assets/bg-25.jpg) no-repeat; background-size:cover; background-position: top center;">
-		  <div class="container">
-		     
+    <div class="row">
+     
+     
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6 mt-5 u-pt-80">
+         <%=image_tag("logo-default.png")%>
+        
+        <h2 class="u-fs-30 u-lh-1_8 py-4" style="color: #ff9f0f;">
+           Boost your website engagement and revenue by increasing the visibility  of your hard earned customer reviews!
+        </h2>
+        
 
-		    <div class="row">
-		     
-		     
-		      <div class="col-lg-1"></div>
-		      <div class="col-lg-6 mt-5 u-pt-80">
-		         <%=image_tag("logo-default.png")%>
-                
-		        <h2 class="u-fs-30 u-lh-1_8 py-4" style="color: #ff9f0f;">
-		           Boost your website engagement and revenue by increasing the visibility  of your hard earned customer reviews!
-		        </h2>
-		        
+      </div>
 
-		      </div>
-
-		       <div class="col-lg-3  mt-5">
-		         <%=image_tag("ed.png")%>
-		      </div>
-		      
-		    </div>
-		  </div> <!-- END container-->
-		</section> <!-- END intro-hero-->
+       <div class="col-lg-3  mt-5">
+         <%=image_tag("ed.png")%>
+      </div>
+      
+    </div>
+  </div> <!-- END container-->
+</section> <!-- END intro-hero-->
 
 <section class="bg-gray-v2 u-py-80" style="background:url(assets/bg-2332.jpg) no-repeat fixed; background-size:cover; border-top: 10px solid #fff;" id="whatis">
   <div class="container">
@@ -246,31 +212,13 @@ Being small business owners ourselves, we understand the value of keeping custom
 		</div> 
 	</div> 
 </section> -->
-<div class="box-shadow-v2" id="contact">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6 py-5 text-center text-lg-left">
-				&copy; Copyright 2018  -  Created by <a class="text-green" href="#top">ReviewTrunk.</a>
-			</div>
-			<div class="col-lg-6 py-5">
-				<ul class="list-inline footer-nav u-ff-dosis text-center text-lg-right mb-0">
-					<li class="list-inline-item">
-						<a class="text-uppercase u-fw-600 p-2" href="#top">Support</a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-uppercase u-fw-600 p-2" href="#top">T&C / Privacy Policy</a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-uppercase u-fw-600 p-2" href="#top">Why Use ReviewTrunk?</a>
-					</li>
-				</ul>
-			</div>
-		</div> <!-- END row-->
-	</div> <!-- END container-->
-</div>
+
+<%=render template: 'layouts/footer'%>
 <div class="scroll-top bg-white box-shadow-v1">
 	<i class="fa fa-angle-up" aria-hidden="true"></i>
 </div> 
+
+
 <script>
 	 $(document).ready(function () {
 	 	
@@ -305,5 +253,5 @@ Being small business owners ourselves, we understand the value of keeping custom
     });
 });
 </script>
-  <script> window.reviewWidget = { appId: "5a3eae93734d1d12b6754044" }; </script> 
-  <script src="http://www.reviewtrunk.com/assets/js/reviewTrunkv2.js"></script>
+  <!-- <script> window.reviewWidget = { appId: "5a3eae93734d1d12b6754044" }; </script>
+  <script src="http://www.reviewtrunk.com/assets/js/reviewTrunkv2.js"></script> -->
