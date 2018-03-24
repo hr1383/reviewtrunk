@@ -6,19 +6,16 @@ Rails.application.routes.draw do
 root to: 'welcomes#index'
 
 resources :sites
-
-
-# get '/pages/pay', :to=>'pages#pay'
+resources :pages , only: [:index]
+resources :welcomes, only: [:index]
 
 get '/payment', :to=>'pages#payment'
-# get '/thanks', :to=>'pages#thanks'
-post '/sites/pay', :to=>'sites#pay'
 post 'pages/signup', :to=>'pages#signup'
 
-resources :pages , only: [:index]
+post '/sites/pay', :to=>'sites#pay'
 
 get 'demo_thanks', :to=>'welcomes#demo_thanks'
 get 'policy', :to=>'welcomes#policy'
-resources :welcomes, only: [:index]
 
+get '/reviews/:id', :to=>'reviews#show'
 end
