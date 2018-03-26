@@ -13,6 +13,12 @@
 
     <body id="top" class="is-scrolling" >
         <%=render template: 'layouts/header'%>
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>" style="width: 100%;
+    text-align: center;position:absolute;z-index:1000;padding-top:80px">
+            <div class="flash_msg" style="color:#ff973b"><%= value %></div>
+          </div>
+        <% end %>
         <%= yield %>
         <%=render template: 'layouts/footer'%>
     </body>
