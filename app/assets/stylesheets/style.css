@@ -5320,3 +5320,12 @@ h1 span{
 	background:url('Gray_Wall_BG.jpg') no-repeat fixed 0 70%;
 	background-size:cover;
 }
+.privacy-bg{
+	padding:0px;
+	background:url('priva_img.jpg'); 
+	background-size:cover; 
+	background-position: top center;
+}
+.footer-nav li a{
+	cursor: pointer;
+}
