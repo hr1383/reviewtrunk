@@ -12,7 +12,9 @@ end
 
 def signup
 	Signup.create(signup_params).save
-	render :json => {"success": true}
+	respond_to do |format|
+        format.js   { }
+    end
 end
 
 def signup_params

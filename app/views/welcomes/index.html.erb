@@ -85,14 +85,16 @@
 				<div class="text-center p-3">
 					<h2 class="text-white">Want to see a demo on your site?</h2>
 					<div class="u-h-4 u-w-10 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
-					<form action="#" method="" >
-						<input class="form-control p-3 u-mb-20" placeholder="Full Name" required="" type="text">
-						<input class="form-control  p-3 u-mb-20" placeholder="Enter your email address here " required="" type="email">
-						<input class="form-control  p-3 u-mb-20" placeholder="Enter review site URL here" required="" type="text">
-						<button class="btn btn-block btn-green ">
-							GO!
-						</button>
-					</form>
+                    <%= form_for Signup.new, url: {action: "signup", :controller=>"pages"}, remote: true do |f|%>
+                        <%= f.text_field :name, placeholder: "Full Name", class: "form-control p-3 u-mb-20"%>
+                        <%= f.email_field :email, placeholder: "Enter your email address here", class: "form-control p-3 u-mb-20"%>
+                        <%= f.text_field :url, placeholder: "Enter review site URL here", class: "form-control p-3 u-mb-20"%>
+						<!-- <input class="form-control p-3 u-mb-20" placeholder="Full Name" required="" type="text">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter your email address here " required="" type="email">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter review site URL here" required="" type="text"> -->
+                        <%= f.submit "GO!", class: "btn btn-block btn-green" %>
+					<%end%>
+                    <span id="form-submit-msg"></span>
 				</div>
 			</div>
 			<div class="col-lg-5 ml-auto text-white">
