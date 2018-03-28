@@ -1,20 +1,25 @@
 .example.example1 {
-  background-color: #6772e5;
+  background: linear-gradient(#fff,#f2f6f9);
+  box-shadow: 0 0 0 1px rgba(14,41,57,.12), 0 2px 5px rgba(14,41,57,.44), inset 0 -1px 2px rgba(14,41,57,.15);
+  padding-bottom: 8px;
+  width: 50%;
+  padding: 30px 0 30px 0;
+  margin: auto; 
 }
 
 .example.example1 * {
   font-family: Roboto, Open Sans, Segoe UI, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .example.example1 fieldset {
-  margin: 0 15px 20px;
+  margin: 0 15px 8px;
   padding: 0;
   border-style: none;
-  background-color: #7795f8;
-  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 #829fff;
+/*  background-color: #ffffff;*/
+/*  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #96989d;*/
   border-radius: 4px;
 }
 
@@ -27,17 +32,17 @@
 }
 
 .example.example1 .row + .row {
-  border-top: 1px solid #819efc;
+/*  border-top: 1px solid #819efc;*/
 }
-
 .example.example1 label {
-  width: 15%;
-  min-width: 70px;
-  padding: 11px 0;
-  color: #c4f0ff;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    width: 21%;
+    padding-top: 30px!important;
+    min-width: 70px;
+    padding: 11px 0;
+    color: #a29e9e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .example.example1 input, .example.example1 button {
@@ -64,15 +69,16 @@
 }
 
 .example.example1 input {
-  width: 100%;
-  padding: 11px 15px 11px 0;
-  color: #fff;
+  padding: 11px 15px 11px 10px;
+  color: #76767c;
+  border: 1px solid #9a9fa4;
+  padding: 9px 30px;
+  border-radius: 4px;
   background-color: transparent;
   -webkit-animation: 1ms void-animation-out;
 }
-
 .example.example1 input::-webkit-input-placeholder {
-  color: #87bbfd;
+  color: #76767c;
 }
 
 .example.example1 input::-moz-placeholder {
@@ -88,9 +94,10 @@
   width: calc(100% - 30px);
   height: 40px;
   margin: 40px 15px 0;
-  background-color: #f6a4eb;
+  margin:  auto;
+  background: linear-gradient(#7dc5ee,#008cdd ,#30a2e4);
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 #ffb9f6;
+    inset 0 1px 0 #35abe7;
   border-radius: 4px;
   color: #fff;
   font-weight: 600;
@@ -98,39 +105,34 @@
 }
 
 .example.example1 button:active {
-  background-color: #d782d9;
+  background-color: #000;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 #e298d8;
 }
 
 .example.example1 .error svg .base {
-  fill: #fff;
+  fill: #2ba7e6;
 }
 
 .example.example1 .error svg .glyph {
-  fill: #6772e5;
+  fill: #fff;
 }
 
 .example.example1 .error .message {
   color: #fff;
 }
-
 .example.example1 .success .icon .border {
-  stroke: #87bbfd;
+  stroke: #1fa2e5;
 }
-
 .example.example1 .success .icon .checkmark {
-  stroke: #fff;
+  stroke: #0899e1;
 }
-
 .example.example1 .success .title {
-  color: #fff;
+  color: #aaaeb2;
 }
-
 .example.example1 .success .message {
-  color: #9cdbff;
+  color: #a29e9e;
 }
-
 .example.example1 .success .reset path {
-  fill: #fff;
+  fill: #25a4e5;
 }
