@@ -2,7 +2,7 @@
   background: linear-gradient(#fff,#f2f6f9);
   box-shadow: 0 0 0 1px rgba(14,41,57,.12), 0 2px 5px rgba(14,41,57,.44), inset 0 -1px 2px rgba(14,41,57,.15);
   padding-bottom: 8px;
-  width: 50%;
+  width: 70%;
   padding: 30px 0 30px 0;
   margin: auto; 
 }
@@ -64,11 +64,16 @@
 }
 
 .example.example1 .StripeElement {
+
   width: 100%;
-  padding: 11px 15px 11px 0;
+padding: 11px 15px 11px 2px;
+
+border: 1px solid #9a9fa4;
+box-shadow: 1px 2px 8px 2px #888888;
+margin-top: 25px!important;
 }
 
-.example.example1 input {
+.example.example1 input,.example.example1 .StripeElement {
   padding: 11px 15px 11px 10px;
   color: #76767c;
   border: 1px solid #9a9fa4;
