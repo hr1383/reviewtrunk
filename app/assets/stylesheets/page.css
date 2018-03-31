@@ -83,7 +83,7 @@ margin-top: 25px!important;
   -webkit-animation: 1ms void-animation-out;
 }
 .example.example1 input::-webkit-input-placeholder {
-  color: #76767c;
+  color: #ccc;
 }
 
 .example.example1 input::-moz-placeholder {
