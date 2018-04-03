@@ -54,7 +54,7 @@
 }
 
 .example.example1 input:-webkit-autofill {
-  -webkit-text-fill-color: #fce883;
+  -webkit-text-fill-color: #495057;
   transition: background-color 100000000s;
   -webkit-animation: 1ms void-animation-out;
 }
