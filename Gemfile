@@ -62,3 +62,4 @@ gem 'bootstrap-sass'
 gem 'stripe'
 gem "twitter-bootstrap-rails"
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'loofah', '~> 2.2.1'
