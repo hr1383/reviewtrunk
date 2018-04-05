@@ -124,7 +124,8 @@ margin-top: 25px!important;
 }
 
 .example.example1 .error .message {
-  color: #fff;
+  color: #c30d37;
+  font-size: 20px;
 }
 .example.example1 .success .icon .border {
   stroke: #1fa2e5;

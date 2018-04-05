@@ -4906,6 +4906,7 @@ p{
     /*font-size: 1rem!important;*/
     font-size: 18px!important;
     margin-top:25px!important;
+    border-radius: 12px;
    }
 
 .input-group .form-control {
@@ -5086,18 +5087,23 @@ p{
   padding-top: 35px!important;
   font-size: 16px;
   /*font-family: FontAwesome;*/
-  content:"\f00c"; color: #fff; 
+  content:"\f00c"; 
+  color: #1fc71f; 
   text-transform: capitalize;
   text-align: left!important; 
 }
 .btn_bg_submit {
   background-color: #ffcb00!important;
   border: 1px solid #ffcb00!important;
+  border-radius: 12px;
   margin-top: 25px;
   margin-bottom: 30px;
   width: 50%;
 }
-.form-control_box-shadow {box-shadow: 1px 2px 8px 2px #888888; height: 40px;}
+.form-control_box-shadow {
+  /*box-shadow: 1px 2px 8px 2px #888888;*/
+  height: 40px;  
+}
 .form-control_height { height: 40px !important;}
 .form_group_main { margin-bottom: 0px; }
 

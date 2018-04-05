@@ -14,8 +14,8 @@ end
 
 def pay
 	
-	StripeTool.create_membership(email: params[:stripeEmail], 
-                                   stripe_token: params[:stripeToken])
+	StripeTool.create_membership(email: current_user.email, 
+                                 stripe_token: params[:site][:stripe_token])
 	site = Site.find_by_user_id(current_user.id)
 	site.update_attributes(params.require(:site).permit(:stripe_token).merge(user_id: current_user.id))
 	render :nothing => true, :status => 201
