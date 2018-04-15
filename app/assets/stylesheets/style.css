@@ -5147,6 +5147,7 @@ input:focus {
 
 .privacy_title { 
   font-size: 21px;
+  text-align: center;
   font-family: FontAwesome; 
   content:"\f00c"; color: #f58b03; 
   text-transform: uppercase; 
@@ -5154,21 +5155,35 @@ input:focus {
   font-weight: bold;
 }
 .privacy_text_wrapper {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  line-height: 1.875em;
-  color: #f58b03;
-  font-weight: normal;
-  padding-top: 30px;
-  padding-bottom: 20px;
+     width: 90%;
+     margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 25px;
+    color: #f58b03;
+    font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .privacy_text_area{
-        width: 90%;
+        font-family: "Open Sans", sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 25px;
+        color: #f58b03;
+        font-weight: normal;
+        padding-bottom: 10px;
+        width: 80%;
         margin: 0 auto;
 }
 #exampleFormControlTextarea1 {
   box-shadow: 1px 2px 8px 2px #888888!important;
   font-size: 16px!important;
+}
+strong {
+  color: #b77100;
+  font-size: 18px;
 }
 
 .modal-dialog {
@@ -5327,10 +5342,11 @@ h1 span{
 	background:url('Gray_Wall_BG.jpg') no-repeat fixed 0 70%;
 	background-size:cover;
 }
-.privacy-bg{
+.privacy-bg {
 	padding:0px;
-	background:url('priva_img.jpg'); 
+	background:url('privacy_img.jpg');
 	background-size:cover; 
+  background-repeat: no-repeat;
 	background-position: top center;
 }
 .footer-nav li a{
@@ -5340,4 +5356,7 @@ h1 span{
 	padding-top: 3rem!important;
 	padding-bottom: 2rem!important;
 	font-size: 14px!important;
+}
+#policy {
+      z-index: 2147483001;
 }
