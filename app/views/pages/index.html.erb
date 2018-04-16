@@ -5,48 +5,37 @@
 		<% if user_signed_in? %>
 			
 			<%= form_for(@site, html: {class: 'form-horizontal'}) do |f| %>
-			 <div class="form-group form_group_main  row">
-		         <%= f.label :business, class: 'col-sm-3 col-form-label' %>
+			 <div class="form-group form_group_main row">
+		         <%= f.label :business, 'Company Name', class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
 		          <%= f.text_field :business, class: 'form-control form-control_height form-control_box-shadow' %>
 			    </div>
 			  </div>
 			  <div class="form-group form_group_main row">
-		        <%= f.label :address, class: 'col-sm-3 col-form-label' %>
+		        <%= f.label :address, 'Company Address', class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
 		              <%= f.text_area :address, class: 'form-control', rows: 3 %>
 			    </div>
 			  </div>
 			  <div class="form-group form_group_main row">
-		        <%= f.label :business_url, 'Offical Website', class: 'col-sm-3 col-form-label' %>
+		        <%= f.label :business_url, 'Company Url', class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
 		            <%= f.text_field :business_url, class: 'form-control form-control_height form-control_box-shadow' %>
 			    </div>
 			  </div>
-			 
+			  <br/>
 			   <div class="field form-group">
 			    
-			    <div class="col-sm-5">
-			      
+			    <div class="col-sm-10">
+			      <h4> Enter Your Review Profile Links Below</h4>
+			      <h4>(YELP, FACEBOOK, AMAZON, GOOGLE ETC)</h4>
 			    </div>
 			  </div>
-			  <div class="form-group form_group_main row">
-			    <%= f.label :widget1, 'Widget', class: 'col-sm-3 col-form-label' %>
-			    <div class="col-sm-5">
-			      <%= f.collection_select :widget1, Provider.all, :id, :name,{} , class: 'form-control form-control_height form-control_box-shadow'%>
-			    </div>
-			  </div>
+			  
 			  <div class="form-group form_group_main row">
 		        <%= f.label :url1, 'review site url #1', class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
 		             <%= f.text_field :url1, class: 'form-control form-control_height form-control_box-shadow' %>
-			    </div>
-			  </div>
-		      
-			  <div class="form-group form_group_main row">
-			    <%= f.label :widget2, 'Widget', class: 'col-sm-3 col-form-label' %>
-			    <div class="col-sm-5">
-			      <%= f.collection_select :widget2, Provider.all, :id, :name,{} , class: 'form-control form-control_height form-control_box-shadow'%>
 			    </div>
 			  </div>
 			  <div class="form-group form_group_main row">
@@ -56,22 +45,20 @@
 			    </div>
 			  </div>
 			  <div class="form-group form_group_main row">
-			    <%= f.label :widget3, 'Widget', class: 'col-sm-3 col-form-label' %>
-			    <div class="col-sm-5">
-			      <%= f.collection_select :widget3, Provider.all, :id, :name,{} , class: 'form-control form-control_height form-control_box-shadow'%>
-			    </div>
-			  </div>
-			  <div class="form-group form_group_main row">
 		        <%= f.label :url3, 'review site url #3', class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
 		             <%= f.text_field :url3, class: 'form-control form-control_height form-control_box-shadow' %>
-			    </div>
+			  </div>
+			  </div>
+			  <div class="col-sm-10">
+			      <h4>Enter Rating(1-4) of reviews want to be displayed in widget.</h4>
+			      <p>E.g.If you enter 4, all review with ratings 4+ will be extracted.</p>
 			  </div>
 			  <div class="form-group form_group_main row">
 		        <%= f.label :ratings, class: 'col-sm-3 col-form-label' %>
 			    <div class="col-sm-5">
-		            <%= f.text_field :ratings, class: 'form-control form-control_height form-control_box-shadow' %>
-			    </div>
+		            <%= f.text_field :ratings, class: 'form-control form-control_height form-control_box-shadow', style: "width:50px" %>
+			  </div>
 			  </div>
 			 <div class="form-group form_group_main row">
 			    <div class="col-sm-7 col-sm-offset-2">
