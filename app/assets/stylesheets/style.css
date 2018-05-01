@@ -5074,10 +5074,9 @@ p{
 .flash_msg { 
   font-size: 21px;
   font-family: FontAwesome; 
-    content:"\f00c"; 
-  color: #fff; 
-  text-transform: uppercase; 
-    padding-top: 30px;
+  content:"\f00c"; 
+  color: #0eb51b; 
+  padding-top: 30px;
 }
 
 
@@ -5086,7 +5085,7 @@ p{
   font-size: 16px;
   /*font-family: FontAwesome;*/
   content:"\f00c"; 
-  color: #1fc71f; 
+  color: #0eb51b; 
   text-transform: capitalize;
   text-align: left!important; 
 }
@@ -5357,4 +5356,15 @@ h1 span{
 }
 #policy {
       z-index: 2147483001;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: rgba(52, 176, 219, 0.3);
+    border-width: 0px
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
 }

@@ -12,22 +12,18 @@
   <%=render template: 'layouts/dashboard-header'%>  
   <div class="bg-img u-h-90vh u-flex-center" style="padding-top: 20px">  
     	<div class="container">
-    		<!-- <div>Welcome to</div> -->
     		<div class="bg_opacity" style="padding-top:50px">
-    			<!-- <div class="welcome_text"> <%=image_tag("welcome_img.png", class: "img-responsive")%></div> -->
-    			<!-- <div class="logo-default_padding"> <%#=image_tag("RT_Logo_White.png")%></div> -->
-    			
-                <% flash.each do |key, value| %>
-                  <div class="alert alert-<%= key %>">
-                    <div class="flash_msg"><%= value %></div>
-                  </div>
-                <% end %>
-                 <%= yield :top_content %>
-
-                <%= yield %>
+            <div class="row">
+              <% flash.each do |key, value| %>
+                <div class="alert alert-<%= key %>">
+                  <div class="flash_msg"><%= value %></div>
+                </div>
+              <% end %>
             </div>
-            
+             <%= yield :top_content %>
+            <%= yield %>
         </div>
+      </div>
   </div>
   <%=render template: 'layouts/footer'%>
 </body>

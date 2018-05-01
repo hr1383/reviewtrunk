@@ -7,24 +7,34 @@ def create
 		Site.create(site_params).save
 		flash[:success] = "Details have been saved!"
 	else 
+		flash[:success] = "Details have been saved!"
 		site.update_attributes(params)	
 	end	
-	redirect_to :back
+	redirect_to pages_path
 end
 
 def pay
 	
-	StripeTool.create_membership(email: current_user.email, 
+	stripe_response = StripeTool.create_membership(email: current_user.email, 
                                  stripe_token: params[:site][:stripe_token])
 	site = Site.find_by_user_id(current_user.id)
-	site.update_attributes(params.require(:site).permit(:stripe_token).merge(user_id: current_user.id))
+	site.update_attributes(params.require(:site)
+		.permit(:stripe_token)
+		.merge(user_id: current_user.id))
+	#fix multiple writes
+	site.update(stripe_info: stripe_response)
 	render :nothing => true, :status => 201
 end
 
 def update
 	site = Site.find_by_id(params[:id])
 	site.update_attributes(site_params)	
-	redirect_to :back
+	if site.stripe_token.nil?
+		redirect_to payment_path
+	else 
+		flash[:success] = "Records updated!"
+		redirect_to pages_path
+	end
 end
 	
 def site_params
