@@ -16,6 +16,7 @@ post '/sites/pay', :to=>'sites#pay'
 
 get 'demo_thanks', :to=>'welcomes#demo_thanks'
 get 'policy', :to=>'welcomes#policy'
+get 'rlt', :to=>'welcomes#rlt'
 
 get '/reviews/:id', :to=>'reviews#show'
 end

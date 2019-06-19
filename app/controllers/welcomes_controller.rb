@@ -18,4 +18,7 @@ class WelcomesController < ApplicationController
 
 	end
 
+	def rlt
+	end
+
 end
