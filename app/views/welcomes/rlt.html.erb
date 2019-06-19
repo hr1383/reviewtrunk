@@ -1,0 +1,252 @@
+<section class="u-py-100 u-h-90vh u-flex-center first-section-bg">
+  <div class="container">
+     
+
+    <div class="row">
+      <div class="col-lg-6  col-sm-6  col-md-6 col-xs-12">
+         <%=image_tag("logo-default.png")%>
+        
+        <h2 class="u-fs-30 u-lh-1_8 py-4" style="color: #ff9f0f;">
+           Boost your website engagement and revenue by increasing the visibility  of your hard earned customer reviews!
+        </h2>
+        
+
+      </div>
+
+       <div class="col-lg-6  col-sm-6  col-md-6 col-xs-12">
+         	<video width="100%"  height="100%" controls>
+				<source src="https://rtvt1.s3.amazonaws.com/IMG_3341.mov" type="video/mp4">
+			</video>
+      </div>
+      
+    </div>
+  </div> <!-- END container-->
+</section> <!-- END intro-hero-->
+
+<section class="bg-gray-v2 u-py-80 second-section-bg" id="whatis">
+  <div class="container">
+   <div class="row">
+     <div class="col-lg-7 col-lg-offset-3  m-auto text-center">
+       <h2 class="h1 text-white">
+        ReviewTrunk gives you a new & innovative way to display your reviews!
+       </h2>
+       <div class="u-h-2 u-w-200 bg-blue rounded mt-4 u-mb-20 mx-auto"></div>
+       <p class="u-fs-20 text-white">
+	       	Displaying reviews on your site can be complicated and require constant updating. This often leads to customer reviews going unnoticed and taking up valuable real estate on your site.
+       </p>
+       <p  class="u-fs-20 text-white">
+	       	The traditional solution is to rely on social review sites to display your reviews. This solution can lead to your customers leaving your site to read your reviews, getting distracted, and never coming back.
+       </p>
+     </div> <!-- END col-lg-8-->
+
+   </div> <!--END row-->
+  </div> <!-- END container-->
+</section> <!-- END section-->
+<section id="howitWorks" class="u-pt-50 third-section-bg" > 
+  <div class="container">
+
+   <div class="row">
+	 	<div class="col-lg-6 mb-4">
+			<div style=" border-left: 4px solid #50e600" class="u-pl-50">
+			<h2 class="h1 text-left" style="color: #ff9f0f;">With ReviewTrunk You Can </h2>
+			 <div >
+			<ul class="list-unstyled u-fw-600 u-lh-2  features-list u-fs-18" style="color: #0bc8ed;">
+				<li >Display reviews in a convenient, aesthetically pleasing, auto-updated widget on each page of your site.</li>
+				<li>Display multiple business location reviews.</li>
+				<li>Keep customers engaged on your site to boost conversion rates and increase revenue.</li>
+			 </ul>
+			 </div>
+			 </div>
+		</div> <!-- END col-md-6-->
+
+		<div class="col-lg-6 "> <%=image_tag("barraqiiexrdezypipcp.png", class: "u-pt-50", style: "margin-top: 80px;")%></div>
+
+
+   </div> <!-- END 	row-->
+   </div>
+</section>
+ 
+<section id="demo" class="u-pb-40 u-pt-40 fourth-section-bg"> 
+	<div class="container">
+		<div class="row u-pb-30 u-pt-20">
+			<div class="col-md-8 col-sm-offset-2 mx-auto ">
+				 <%=image_tag("RT_Logo_White.png") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4  ">
+        		 <%=image_tag("ed.png") %>
+     	 </div>
+			<div class="col-lg-3">
+        		 <%=image_tag("AverageReview.png") %>
+     	 </div>
+			<div class="col-lg-5 mb-5 mb-lg-0">
+				<div class="text-center p-3">
+					<h2 class="text-white">Want to see a demo on your site?</h2>
+					<div class="u-h-4 u-w-10 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+                    <%= form_for Signup.new, url: {action: "signup", :controller=>"pages"}, remote: true do |f|%>
+                        <%= f.text_field :name, placeholder: "Full Name", class: "form-control p-3 u-mb-20"%>
+                        <%= f.email_field :email, placeholder: "Enter your email address here", class: "form-control p-3 u-mb-20"%>
+                        <%= f.text_field :url, placeholder: "Enter review site URL here", class: "form-control p-3 u-mb-20"%>
+						<!-- <input class="form-control p-3 u-mb-20" placeholder="Full Name" required="" type="text">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter your email address here " required="" type="email">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter review site URL here" required="" type="text"> -->
+                        <%= f.submit "GO!", class: "btn btn-block btn-green" %>
+					<%end%>
+                    <span id="form-submit-msg"></span>
+				</div>
+			</div>
+			<div class="col-lg-5 ml-auto text-white">
+				 
+			</div>
+		</div> <!-- END row-->
+	</div> <!-- END container -->
+</section>
+
+
+
+
+
+<section id="pricing" class="bg-gray-v2 u-py-50 fifth-section-bg"> 
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="h1 u-fs-60 text-white">PRICING</h2>
+				<div class="u-h-4 u-w-50 bg-green rounded mt-4 u-mb-20 mx-auto"></div>
+			</div>
+		</div> <!-- END row-->
+		<div class="row">
+
+			<div class="col-md-1 mt-5"></div>
+			<div class="col-md-4 mt-5">
+				<div class="bg-white box-shadow-v2 rounded">
+					<h4 class="m-0 py-4 u-fs-30" style="color: #0bbdea">
+					Pro
+					</h4>
+					<h3 class="m-0 py-2 u-fs-50" style="color: #f47f1f; line-height: 26px;">
+						$15.99<br/><span class="u-fs-521" style="color: #0bbdea">Per month</span>
+					</h3>
+					 
+					 <p>1 month FREE trial</p>
+						<div class="u-py-20 u-p-20" style="margin-top: 35px;">
+						
+                            <%=link_to "Get STARTED Now", new_user_registration_path, class: "btn btn-green  btn-block", style: "background-color: #0bbdea"%>
+						</div>
+					 
+				</div>
+			</div> <!-- END col-md-4-->
+
+			<div class="col-md-6 mt-5">
+				<div class="bg-white box-shadow-v2 rounded">
+					<h3 class="m-0 py-2 u-fs-50" style="color: #f47f1f">
+						What You Get:
+					</h3>
+					<ul class="list-unstyled u-py-10 u-lh-2 text-center u-fs-20">
+						<li>  Display reviews from 4 sites of your choosing.</li>
+						<li>  Display reviews from 3 business locations.</li>
+						<li>  Display 10 latest reviews (updated automatically).</li>
+						<li> Display any social media icon.</li>
+						<li><br/></li>
+					</ul>
+				</div>
+ 
+
+			</div> <!-- END col-md-4-->
+
+
+
+ 
+
+		</div> <!-- END row-->
+	</div> <!-- END container-->
+</section> <!--END section-->
+
+
+<section id="about" class="u-py-40 sixth-section-bg">
+	<div class="container">
+		<div class="row align-items-center">			
+			<div class="col-lg-3  text-right">
+				<div style=" border-right: 4px solid #ff9f11" class="u-pr-50">
+				<h2 class="h1" style="color: #0bbdea;">
+				Who we are
+				</h2>
+			</div>
+			</div>
+			<div class="col-lg-9 ">
+				<div class="u-pl-80">
+				<p class="u-fs-16" style="color: #0bbdea">
+					We’re a small group of dedicated entrepreneurs working to help businesses, big or small, connect with their customers, lower overhead, increase revenue, and reinvest their hard earned capital into their own interests, instead of spending it on popular review site advertising.</p>
+				<p class="u-fs-16" style="color: #0bbdea">
+Being small business owners ourselves, we understand the value of keeping customers engaged, so we designed our ReviewTrunk widget to be very cost effective and simple to use. We want any business to have the ability to take advantage of displaying their hard earned reviews, wether they spend a lot on advertising or not. </p> 
+
+</div>
+			
+			</div> <!-- END col-lg-6 -->
+			
+		</div> <!-- END row-->
+	</div> <!-- END container-->
+</section>
+
+
+
+
+
+<!-- <section class="u-py-60"   style="background:url(assets/Navy_Yellow_BG.jpg) no-repeat fixed 0 60%; background-size:cover;"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<h2 class="text-center text-white mb-5">Subscribe for more information about ReviewTrunk</h2>
+				<form class="form-inline align-items-stretch">
+					
+					<button type="submit" class="btn btn-green">
+						Subscribe
+					</button>
+					<div class="form-group mr-md-4 u-flex-1 u-pl-10">
+						<input type="email" class="form-control p-3 u-w-100p border-0" placeholder="Enter your email address">
+					</div>
+				</form>
+			</div> 
+		</div> 
+	</div> 
+</section> -->
+<div class="scroll-top bg-white box-shadow-v1">
+	<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div> 
+
+
+<script>
+	 $(document).ready(function () {
+	 	
+    // $(document).on("scroll", onScroll);
+   
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+       	var val =  $target.offset().top  -94;
+        if(target == "#whatis"){
+        	val = $target.offset().top  -84;
+        }
+
+        $('html, body').stop().animate({
+            'scrollTop': val 
+        }, 500, 'swing', function () {
+            // window.location.hash = target;
+         //    if(target == "#howitWorks"){
+        	// 	$('#howitWorks').addClass("active");
+        	// }
+            // $(document).on("scroll", onScroll);
+        });
+    });
+});
+</script>
+  <script> window.reviewWidget = { appId: "5d09c07ffb6fc00e79ac5a1d", backColor: "#35d16ea3" }; </script>
+  <script src="assets/rtv1.js"></script>
