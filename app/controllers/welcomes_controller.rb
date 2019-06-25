@@ -21,4 +21,6 @@ class WelcomesController < ApplicationController
 	def rlt
 	end
 
+	def lt
+	end
 end
