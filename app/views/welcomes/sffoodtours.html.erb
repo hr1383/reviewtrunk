@@ -63,6 +63,92 @@
    </div> <!-- END 	row-->
    </div>
 </section>
+ 
+<section id="demo" class="u-pb-40 u-pt-40 fourth-section-bg"> 
+	<div class="container">
+		<div class="row u-pb-30 u-pt-20">
+			<div class="col-md-8 col-sm-offset-2 mx-auto ">
+				 <%=image_tag("RT_Logo_White.png") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4  ">
+        		 <%=image_tag("ed.png") %>
+     	 </div>
+			<div class="col-lg-3">
+        		 <%=image_tag("AverageReview.png") %>
+     	 </div>
+			<div class="col-lg-5 mb-5 mb-lg-0">
+				<div class="text-center p-3">
+					<h2 class="text-white">Want to see a demo on your site?</h2>
+					<div class="u-h-4 u-w-10 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+                    <%= form_for Signup.new, url: {action: "signup", :controller=>"pages"}, remote: true do |f|%>
+                        <%= f.text_field :name, placeholder: "Full Name", class: "form-control p-3 u-mb-20"%>
+                        <%= f.email_field :email, placeholder: "Enter your email address here", class: "form-control p-3 u-mb-20"%>
+                        <%= f.text_field :url, placeholder: "Enter review site URL here", class: "form-control p-3 u-mb-20"%>
+						<!-- <input class="form-control p-3 u-mb-20" placeholder="Full Name" required="" type="text">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter your email address here " required="" type="email">
+                        <input class="form-control  p-3 u-mb-20" placeholder="Enter review site URL here" required="" type="text"> -->
+                        <%= f.submit "GO!", class: "btn btn-block btn-green" %>
+					<%end%>
+                    <span id="form-submit-msg"></span>
+				</div>
+			</div>
+			<div class="col-lg-5 ml-auto text-white">
+				 
+			</div>
+		</div> <!-- END row-->
+	</div> <!-- END container -->
+</section>
+
+<!-- <section id="pricing" class="bg-gray-v2 u-py-50 fifth-section-bg"> 
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="h1 u-fs-60 text-white">PRICING</h2>
+				<div class="u-h-4 u-w-50 bg-green rounded mt-4 u-mb-20 mx-auto"></div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-1 mt-5"></div>
+			<div class="col-md-4 mt-5">
+				<div class="bg-white box-shadow-v2 rounded">
+					<h4 class="m-0 py-4 u-fs-30" style="color: #0bbdea">
+					Pro
+					</h4>
+					<h3 class="m-0 py-2 u-fs-50" style="color: #f47f1f; line-height: 26px;">
+						$15.99<br/><span class="u-fs-521" style="color: #0bbdea">Per month</span>
+					</h3>
+					 
+					 <p>1 month FREE trial</p>
+						<div class="u-py-20 u-p-20" style="margin-top: 35px;">
+						
+                            <%=link_to "Get STARTED Now", new_user_registration_path, class: "btn btn-green  btn-block", style: "background-color: #0bbdea"%>
+						</div>
+					 
+				</div>
+			</div> 
+
+			<div class="col-md-6 mt-5">
+				<div class="bg-white box-shadow-v2 rounded">
+					<h3 class="m-0 py-2 u-fs-50" style="color: #f47f1f">
+						What You Get:
+					</h3>
+					<ul class="list-unstyled u-py-10 u-lh-2 text-center u-fs-20">
+						<li>  Display reviews from 4 sites of your choosing.</li>
+						<li>  Display reviews from 3 business locations.</li>
+						<li>  Display 10 latest reviews (updated automatically).</li>
+						<li> Display any social media icon.</li>
+						<li><br/></li>
+					</ul>
+				</div>
+			</div> 
+		</div> 
+	</div> 
+</section> -->
+
+
 <section id="about" class="u-py-40 sixth-section-bg">
 	<div class="container">
 		<div class="row align-items-center">			
@@ -149,5 +235,5 @@ Being small business owners ourselves, we understand the value of keeping custom
     });
 });
 </script>
-  <script> window.reviewWidget = { appId: "5d87107ffb6fc00e79ac5ae4", backColor: "#35d16ea3" }; </script>
+  <script> window.reviewWidget = { appId: "5d87107ffb6fd34e79215bc3", backColor: "#35d16ea3" }; </script>
   <script src="assets/rtv1.js"></script>

@@ -23,4 +23,15 @@ class WelcomesController < ApplicationController
 
 	def lt
 	end
+	def sftourguides
+	end
+
+	def wildsftours
+	end
+	def sffoodtours
+	end
+	def sfnativetours
+	end
+	def sflovetours
+	end
 end

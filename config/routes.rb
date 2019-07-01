@@ -15,9 +15,17 @@ post 'pages/signup', :to=>'pages#signup'
 post '/sites/pay', :to=>'sites#pay'
 
 get 'demo_thanks', :to=>'welcomes#demo_thanks'
+get '/reviews/:id', :to=>'reviews#show'
+
+
 get 'policy', :to=>'welcomes#policy'
+
+# demo list
 get 'rlt', :to=>'welcomes#rlt'
 get 'lt', :to=>'welcomes#lt'
-
-get '/reviews/:id', :to=>'reviews#show'
+get 'sftourguides', :to=>'welcomes#sftourguides'
+get 'widlsftours', :to=>'welcomes#widldsftours'
+get 'sffoodtours', :to=>'welcomes#sffoodtours'
+get 'sffoodtours', :to=>'welcomes#sfnativetours'
+get 'sflovetours', :to=>'welcomes#sflovetours'
 end
