@@ -23,9 +23,9 @@ get 'policy', :to=>'welcomes#policy'
 # demo list
 get 'rlt', :to=>'welcomes#rlt'
 get 'lt', :to=>'welcomes#lt'
-get 'sftourguides', :to=>'welcomes#sftourguides'
+get 'sftourguides', :to=>'welcomes#sftourguides' #not display
 get 'wildsftours', :to=>'welcomes#wildsftours'
-get 'sffoodtours', :to=>'welcomes#sffoodtours'
+get 'sffoodtours', :to=>'welcomes#sffoodtours' #works
 get 'sfnativetours', :to=>'welcomes#sfnativetours'
 get 'sflovetours', :to=>'welcomes#sflovetours'
 
