@@ -23,10 +23,23 @@ get 'policy', :to=>'welcomes#policy'
 # demo list
 get 'rlt', :to=>'welcomes#rlt'
 get 'lt', :to=>'welcomes#lt'
-get 'sftourguides', :to=>'welcomes#sftourguides' #not display
+get 'sftourguides', :to=>'welcomes#sftourguides' 
 get 'wildsftours', :to=>'welcomes#wildsftours'
-get 'sffoodtours', :to=>'welcomes#sffoodtours' #works
+get 'sffoodtours', :to=>'welcomes#sffoodtours' 
 get 'sfnativetours', :to=>'welcomes#sfnativetours'
 get 'sflovetours', :to=>'welcomes#sflovetours'
+get 'paintedladies', :to=>'welcomes#paintedladies'
 
+get 'greendreamtours', :to=>'welcomes#greendreamtours'
+get 'cruisecastrotours', :to=>'welcomes#cruisecastrotours'
+get 'sfhelicopter', :to=>'welcomes#sfhelicopter'
+
+get 'bbatours', :to=>'welcomes#bbatours'
+get 'dylantours', :to=>'welcomes#dylantours'
+get 'adventurecat', :to=>'welcomes#adventurecat'
+get 'ultimatehytours' :to=>'welcome#ultimatehytours'
+get 'dayinlatours', :to=>'welcome#dayinlatours'
+get 'legendaryhytours', :to=>'welcome#legendaryhytours'
+get 'pedalornot', :to=>'welcome#pedalornot'
+get 'atc', :to=>'welcome#atc'
 end

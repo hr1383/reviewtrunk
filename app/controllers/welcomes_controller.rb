@@ -34,4 +34,29 @@ class WelcomesController < ApplicationController
 	end
 	def sflovetours
 	end
+	def paintedladies
+	end
+	def greendreamtours 
+	end
+	def cruisecastrotours
+	end
+	def sfhelicopter
+	end
+	def bbatours
+	end
+	def dylantours
+	end
+	def adventurecat
+	end
+	def ultimatehytours
+	end
+	def dayinlatours
+	end
+
+	def legendaryhytours
+	end
+	def pedalornot
+	end
+	def atc
+	end
 end
